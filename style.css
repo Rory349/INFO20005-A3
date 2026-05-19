@@ -163,8 +163,50 @@ body{
     text-decoration: none;
 }
 
+
+/* PRODUCT LIST PAGE */
+
+/* product list */
+.sigtitle{
+    font-size: 36px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+    color: #2B443B;
+}
+
+.productlist{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
 .productcard{
     width: 257px;
     height: 358px;
-    
+    background: #D7F8EB;
+    text-align: center;
+    text-decoration: none;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.productcard img{
+    width: 257px;
+    height: 257px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.productcard h2{
+    color: #2B443B;
+    font-weight: lighter;
+}
+
+.productcard p{
+    color: #5B2432;
+    font-family: Arial, Helvetica, sans-serif;
 }
