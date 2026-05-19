@@ -1,7 +1,95 @@
-.navbut{
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background: #FFFFFF;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+
+    background-color: #E6BBC3;
+    padding: 15px;
+
+    border-radius: 50px;
+
+    position: relative;
+}
+
+.navbut{
     text-decoration: none;
     color: #5B2432;
+    font-size: 22px;
+    background: none;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #C35671;
+    border-style: solid;
+    border-bottom: none;
+    border-top: none;
+    border-width: 2px;  
+}
+
+.cakebtn{
+    text-decoration: none;
+    color: #5B2432;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #C35671;
+    border-style: solid;
+    border-bottom: none;
+    border-top: none;
+    border-width: 2px;  
+}
+
+.cakedropdown{
+    display: none;
+
+    position: relative;
+
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #5B2432;
+
+}
+
+.cakedropdown a:hover{
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #5B2432;
+    font-size: 18px;
+
+}
+
+.dropdowntext{
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #5B2432;
+    font-size: 18px;
+}
+
+.cakebtn:hover .cakedropdown{
+    display: block;
 }
