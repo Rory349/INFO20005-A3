@@ -93,3 +93,37 @@ body{
 .cakebtn:hover .cakedropdown{
     display: block;
 }
+
+
+/* hero section */
+.homemain{
+    background-image: url('millbhome.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.hero{
+    display: flex;
+    align-items: centre;
+    height: 300px;
+    justify-content: center;
+}
+
+.herotext{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+    background-color: #D7F8EB;
+    border-radius: 50px;
+    color:#E6BBC3;
+
+    font-size: 45px;
+
+    padding: 25px;
+    height: 137px;
+    width: 1117px;
+
+}
+
