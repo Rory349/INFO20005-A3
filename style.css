@@ -216,3 +216,116 @@ body{
     color: #5B2432;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* PRODUCT PAGE */
+.productpage{
+    margin: 60px;
+}
+
+.keepshopping{
+    font-size: 20px;
+    color:#C35671;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.productimage{
+    display: flex;
+    border-radius: 15px;
+    width: 600px;
+    height: 600px;
+}
+
+/*product info*/
+.product{
+    display: flex;
+    column-gap: 50px;
+}
+
+.productinfo h2{
+    color: #2B443B;
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+.productinfo p{
+    color: #C35671;
+    font-size: 20px;
+}
+
+.productinfo h3{
+    color:#2B443B;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/*product extras*/
+.extra{
+    border:2px solid;
+    border-color: #C35671;
+    border-radius: 15px;
+    padding:15px;
+    color: #5B2432;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* quantity button*/
+.qty{
+    display: flex;
+    align-items: center;
+    border:2px solid;
+    border-color: #C35671;
+    border-radius: 15px;
+    width: 170px;
+    height: 40px;
+    margin-bottom: 15px;
+
+}
+
+.qty button{
+    width: 30%;
+    height: 100%;
+
+    border: none;
+    background: none;
+
+    font-size: 20px;
+    color: #5B2432;
+}
+
+.qty span{
+    flex:1;
+    text-align: center;
+    font-size: 20px;
+    color: #5B2432;
+    border: 1px solid;
+    border-color: #C35671;
+    border-top: none;
+    border-bottom: none;
+}
+
+/*price*/
+.price{
+    font-size: 32px;
+    color: #5B2432;
+}
+
+/*add to card button*/
+.addtocart{
+    width: 340px;
+    height: 60px;
+
+    border: 2px solid;
+    border-color: #E6BBC3;
+    border-radius: 15px;
+    background: #C35671;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    color: #E6BBC3;
+}
