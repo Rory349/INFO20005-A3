@@ -78,13 +78,66 @@
                     </div>
                 </section>
             </section>
+            <section class="listitem">
+                <img src="mbchestnut.png">
+                <section class="listinfo">
+                    <h3>Mont Blanc Chestnut</h>
+                    <!-- <p class="itemprice">AU$70</p> -->
+                    <p id="mbpricecart">$95.00 AUD</p>
+                    <div class="qtysmall">
+                        <button id="minusbtnmb">-</button>
+                        <span id="quantitymb">1</span>
+                        <button id="plusbtnmb">+</button>
+                    </div>
+                </section>
+            </section>
         </section>
         
-        <p class="totalprice">AU$165</p>
+        <p class="totalprice" id="totalprice">AU$165</p>
 
         <a class="checkoutbtnalign" href="">
             <button class="checkoutbtn">checkout</button>
         </a>
+
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup" id="popup">
+                
+                <div class="popup-content">
+                    <h3>Payment Details</h3>
+                    <p>Email Address</p>
+                    <input type="email" placeholder="JOHNPORK@PORKMAIL.COM" id="emailInput">
+                    <p>Name on Card</p>
+                    <input type="name" placeholder="JOHN PORK" id="nameInput">
+                    <p>Card No.</p>
+                    <input type="card" placeholder="0123 4567 8910" id="cardInput">
+
+                    <!-- div to format Expiry and CVC on same line -->
+                    <div class = "paymentFormat">
+                        <p>Expiry</p>
+                        <input type="expiry" placeholder="DD/MM/YY" id="expiryInput">
+                        <p>CVC</p>
+                        <input type="cvc" placeholder="123" id="cvcInput">
+                    
+                    </div>
+                    <p>Billing Address</p>
+                    <input type="address" placeholder="111 EXAMPLE ST, SUBURB" id="adressInput">
+
+                    <!-- div to format Postcode and State on same line -->
+                    <div class = "paymentFormat">
+                        <p>Postcode</p>
+                        <input type="postcode" placeholder="0000" id="postcodeInput">
+                        <p>State</p>
+                        <input type="state" placeholder="VIC" id="stateInput">
+                    
+                    </div>
+                    <button onclick="submitForm()">place order</button>
+                    
+                    
+                </div>
+                <span class="close" id="closePopup">back to cart</span>
+            
+            </div>
+        </div>
 
 
     </main>
