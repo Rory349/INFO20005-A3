@@ -22,7 +22,7 @@ body{
     align-items: center;
     gap: 40px;
 
-    background-color: #E6BBC3;
+    background-color: #F7EBED;
     padding: 15px;
 
     border-radius: 50px;
@@ -49,6 +49,15 @@ body{
     border-width: 2px;  
 }
 
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown:hover .a:hover{
+    display: block;
+}
+
 .cakebtn{
     width: 200px;
     text-decoration: none;
@@ -57,7 +66,6 @@ body{
     font-size: 22px;
     background: none;
     border: none;
-    cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
     padding-left: 10px;
@@ -82,15 +90,6 @@ body{
 
 }
 
-.cakedropdown a:hover{
-    display: block;
-    text-decoration: none;
-    color: #5B2432;
-    font-size: 18px;
-    padding-top: 10px;
-
-}
-
 .dropdowntext{
     display: block;
     text-decoration: none;
@@ -99,9 +98,6 @@ body{
     padding-top: 10px;
 }
 
-.cakebtn:hover .cakedropdown{
-    display: block;
-}
 
 
 /* hero section */
@@ -226,7 +222,7 @@ body{
 .keepshopping{
     font-size: 20px;
     color:#C35671;
-    display: flex;
+    display: inline-block;
     padding-bottom: 10px;
 }
 
@@ -328,4 +324,145 @@ body{
     font-size: 24px;
     text-align: center;
     color: #E6BBC3;
+}
+
+/* CART PAGE*/
+.cartheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.yourcart{
+    font-weight: lighter;
+    font-size: 36px;
+}
+
+.keepshoppingcart{
+    font-size: 20px;
+    color:#C35671;
+}
+
+.cartlabel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.cartlist{
+    
+}
+
+.listitem{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.listitem img{
+    width: 118px;
+    height: 118px;
+    border-radius: 15px;
+}
+
+.listinfo{
+    margin-left: 20px;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+
+
+.listinfo h3{
+    color: #2B443B;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0;
+}
+
+.listinfo p{
+    color: #5B2432;
+    font-weight: lighter;
+    font-size: 16;
+    margin-top: 0px;
+}
+
+.itemprice{
+    color: #5B2432;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+    text-align: right;
+}
+
+/*cart quanity button*/
+.qtysmall{
+    display: flex;
+    align-items: center;
+    border:2px solid;
+    border-color: #C35671;
+    border-radius: 15px;
+    width: 96px;
+    height: 22px;
+    margin-bottom: 15px;
+}
+
+.qtysmall button{
+    width: 30%;
+    height: 100%;
+
+    border: none;
+    background: none;
+
+    font-size: 20px;
+    color: #5B2432;
+}
+
+.qtysmall span{
+    flex:1;
+    text-align: center;
+    font-size: 20px;
+    color: #5B2432;
+    border: 1px solid;
+    border-color: #C35671;
+    border-top: none;
+    border-bottom: none;
+}
+
+.totalprice{
+    text-align: right;
+    padding-right: 50px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5B2432;
+}
+
+.checkoutbtnalign{
+    justify-content: right;
+    display: flex;
+    margin: 50px;
+    text-decoration: none;
+
+}
+
+.checkoutbtn{
+    width: 340px;
+    height: 60px;
+
+    border: 2px solid;
+    border-color: #E6BBC3;
+    border-radius: 15px;
+    background: #C35671;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #E6BBC3;   
 }
