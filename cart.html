@@ -112,24 +112,48 @@
                     <input type="card" placeholder="0123 4567 8910" id="cardInput">
 
                     <!-- div to format Expiry and CVC on same line -->
-                    <div class = "paymentFormat">
-                        <p>Expiry</p>
-                        <input type="expiry" placeholder="DD/MM/YY" id="expiryInput">
-                        <p>CVC</p>
-                        <input type="cvc" placeholder="123" id="cvcInput">
+                    <table class="paymentFormat">
+                        <tr>
+                            <th>
+                                <p>Expiry</p>
+                            </th>
+                            <th>
+                                <p>CVC</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="expiry" placeholder="DD/MM/YY" id="expiryInput">
+                            </th>
+                            <th>
+                                <input type="cvc" placeholder="123" id="cvcInput">
+                            </th>
+                        </tr>
+                    </table>
                     
-                    </div>
                     <p>Billing Address</p>
                     <input type="address" placeholder="111 EXAMPLE ST, SUBURB" id="adressInput">
 
                     <!-- div to format Postcode and State on same line -->
-                    <div class = "paymentFormat">
-                        <p>Postcode</p>
-                        <input type="postcode" placeholder="0000" id="postcodeInput">
-                        <p>State</p>
-                        <input type="state" placeholder="VIC" id="stateInput">
+                    <table class="paymentFormat">
+                        <tr>
+                            <th>
+                                <p>Postcode</p>
+                            </th>
+                            <th>
+                                <p>State</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="postcode" placeholder="0000" id="postcodeInput">
+                            </th>
+                            <th>
+                                <input type="state" placeholder="VIC" id="stateInput">
+                            </th>
+                        </tr>
+                    </table>
                     
-                    </div>
                     <button onclick="submitForm()">place order</button>
                     
                     

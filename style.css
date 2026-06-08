@@ -487,6 +487,68 @@ body{
     border-radius: 15px;
 }
 
+
 .popup-content{
     text-align: left;
+}
+
+.popup-content h3{
+    color: #2B443B;
+    font-size: 32px;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.popup-content p{
+    color: #2B443B;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.popup input{
+    width: 80%;
+    background-color: #D7F8EB;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.paymentFormat p{
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.popup-content button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 340px;
+    height: 60px;
+    margin-top: 20px;
+
+    border: 2px solid;
+    border-color: #E6BBC3;
+    border-radius: 15px;
+    background: #C35671;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #E6BBC3;   
+}
+
+.close{
+    display: block;
+    align-self: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+    color: #C35671;
+    font-size: 15px;
+    cursor: pointer;
 }
