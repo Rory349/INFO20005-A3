@@ -95,9 +95,9 @@
         
         <p class="totalprice" id="totalprice">AU$165</p>
 
-        <a class="checkoutbtnalign" href="">
-            <button class="checkoutbtn">checkout</button>
-        </a>
+        <div class="checkoutbtnalign">
+            <button class="checkoutbtn" id="openPopup">checkout</button>
+        </div>
 
         <div class="popup-overlay" id="popupOverlay">
             <div class="popup" id="popup">
@@ -132,7 +132,7 @@
                     </table>
                     
                     <p>Billing Address</p>
-                    <input type="address" placeholder="111 EXAMPLE ST, SUBURB" id="adressInput">
+                    <input type="address" placeholder="111 EXAMPLE ST, SUBURB" id="addressInput">
 
                     <!-- div to format Postcode and State on same line -->
                     <table class="paymentFormat">

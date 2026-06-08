@@ -68,3 +68,49 @@ minusBtnMb.addEventListener("click", () => {
     }
 });
 
+//Payment Overlay
+document.addEventListener('DOMContentLoaded', function () {
+    const popupOverlay = document.getElementById('popupOverlay');
+    const popup = document.getElementById('popup');
+    const openPopup = document.getElementById('openPopup');
+    const closePopup = document.getElementById('closePopup');
+    const emailInput = document.getElementById('emailInput');
+    const nameInput = document.getElementById('nameInput');
+    const cardInput = document.getElementById('cardInput');
+    const expiryInput = document.getElementById('expiryInput');
+    const cvcInput = document.getElementById('cvcInput');
+    const addressInput = document.getElementById('addressInput');
+    const postcodeInput = document.getElementById('postcodeInput');
+    const stateInput = document.getElementById('stateInput');
+
+    //Open Popup Function
+    function openPopupFunc() {
+        popupOverlay.style.display = 'block';
+
+    }
+
+    //Close popup func
+    function closePopupFunc() {
+        popupOverlay.style.direction = 'none';
+    }
+
+    //Submit payment form function
+    function submitForm () {
+        const email = emailInput.value;
+        const name = nameInput.value;
+        const card = cardInput.value;
+        const expiry = expiryInput.value;
+        const cvc = cvcInput.value;
+        const address = addressInput.value;
+        const postcode = postcodeInput.value;
+        const state = stateInput.value;
+        console.log('Payment Submitted, payment details: ${email} ${name} ${card} ${expiry} ${cvc} ${address} ${postcode} ${state}');
+        closePopupFunc();
+    }
+
+    //Open and close popup
+    openPopup.addEventListener('click', openPopupFunc);
+
+    closePopup.addEventListener('click', closePopupFunc);
+
+});
