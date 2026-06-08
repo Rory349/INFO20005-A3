@@ -9,6 +9,7 @@ let quantity = 1;
 plusBtn.addEventListener("click", () => {
     quantity++;
     quantityDisplay.textContent = quantity;
+    pdreamPrice = quantity*70;
     pdreamPrice.textContent = "$"+quantity*70+".00 AUD";
 });
 
@@ -16,6 +17,7 @@ minusBtn.addEventListener("click", () => {
     if (quantity > 1) {
         quantity--;
         quantityDisplay.textContent = quantity;
+        pdreamPrice = quantity*70;
         pdreamPrice.textContent = "$"+quantity*70+".00 AUD";
     }
     
