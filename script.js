@@ -68,6 +68,8 @@ minusBtnMb.addEventListener("click", () => {
     }
 });
 
+
+
 //Payment Overlay
 document.addEventListener('DOMContentLoaded', function () {
     const popupOverlay = document.getElementById('popupOverlay');
@@ -83,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const postcodeInput = document.getElementById('postcodeInput');
     const stateInput = document.getElementById('stateInput');
     const placeOrderBtn = document.getElementById('placeOrderBtn');
+    const confirmOverlay = document.getElementById('confirmOverlay');
 
     //Open Popup Function
     function openPopupFunc() {
@@ -90,10 +93,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
+    //Open Confirmation Function
+    function openConfirmFunc() {
+        confirmOverlay.style.display = 'block';
+
+    }
+
     //Close popup func
     function closePopupFunc() {
         popupOverlay.style.display = 'none';
     }
+    
 
     //Submit payment form function
     function submitForm() {
@@ -107,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const state = stateInput.value;
         console.log(`Payment Submitted, payment details: ${email} ${name} ${card} ${expiry} ${cvc} ${address} ${postcode} ${state}`);
         closePopupFunc();
+        openConfirmFunc();
     }
 
     //Open and close popup
@@ -114,5 +125,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closePopup.addEventListener('click', closePopupFunc);
     placeOrderBtn.addEventListener('click', submitForm);
+
+});
+
+
+//Confirmation Overlay
+document.addEventListener('DOMContentLoaded', function () {
+    const confirm = document.getElementById('confirm');
+    const openConfirm = document.getElementById('openConfirm');
+    const returnBtn = document.getElementById('returnBtn');
+
+    //Close confirmation func
+    function closeConfirmFunc() {
+        confirmOverlay.style.display = 'none';
+    }
+
+    returnBtn.addEventListener('click', closeConfirmFunc);
 
 });

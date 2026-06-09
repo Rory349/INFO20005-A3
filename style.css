@@ -555,7 +555,7 @@ body{
 
 /* ORDER CONFIRMATION OVERLAY */
 .confirm-overlay{
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -610,4 +610,8 @@ body{
     text-align: center;
     text-decoration: none;
     color: #E6BBC3;   
+}
+
+.confirm-content a{
+    text-decoration: none;
 }
