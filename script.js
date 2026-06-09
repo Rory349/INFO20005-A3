@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const addressInput = document.getElementById('addressInput');
     const postcodeInput = document.getElementById('postcodeInput');
     const stateInput = document.getElementById('stateInput');
+    const placeOrderBtn = document.getElementById('placeOrderBtn');
 
     //Open Popup Function
     function openPopupFunc() {
@@ -91,11 +92,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Close popup func
     function closePopupFunc() {
-        popupOverlay.style.direction = 'none';
+        popupOverlay.style.display = 'none';
     }
 
     //Submit payment form function
-    function submitForm () {
+    function submitForm() {
         const email = emailInput.value;
         const name = nameInput.value;
         const card = cardInput.value;
@@ -104,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const address = addressInput.value;
         const postcode = postcodeInput.value;
         const state = stateInput.value;
-        console.log('Payment Submitted, payment details: ${email} ${name} ${card} ${expiry} ${cvc} ${address} ${postcode} ${state}');
+        console.log(`Payment Submitted, payment details: ${email} ${name} ${card} ${expiry} ${cvc} ${address} ${postcode} ${state}`);
         closePopupFunc();
     }
 
@@ -112,5 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
     openPopup.addEventListener('click', openPopupFunc);
 
     closePopup.addEventListener('click', closePopupFunc);
+    placeOrderBtn.addEventListener('click', submitForm);
 
 });

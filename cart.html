@@ -99,6 +99,7 @@
             <button class="checkoutbtn" id="openPopup">checkout</button>
         </div>
 
+        <!-- Payment Overlay-->
         <div class="popup-overlay" id="popupOverlay">
             <div class="popup" id="popup">
                 
@@ -154,14 +155,27 @@
                         </tr>
                     </table>
                     
-                    <button onclick="submitForm()">place order</button>
+                    <button id="placeOrderBtn">place order</button>
                     
                     
                 </div>
-                <span class="close" id="closePopup">back to cart</span>
+                <p class="close" id="closePopup">back to cart</p>
             
             </div>
         </div>
+
+        <!-- Payment Confirmation Overlay-->
+        <div class="confirm-overlay" id="confirmOverlay">
+            <div class="confirm" id="confirm">
+                
+                <div class="confirm-content">
+                    <p>YOUR ORDER HAS BEEN PLACED!</p>
+                    
+                    <button id="continueShopping">continue shopping</button>
+                    
+                    
+                </div>
+        
 
 
     </main>
