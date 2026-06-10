@@ -732,4 +732,43 @@ img{
         height: auto;
     }
 
+    /* PRODUCT PAGES */
+    .productpage{
+        margin: 10px;
+    }
+
+    .keepshopping{
+        font-size: 14px;
+    }
+
+    .productimage{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .product{
+        display: block;
+    }
+
+    .productinfo h2{
+        font-size: 20px;
+    }
+
+    .productinfo p{
+        font-size: 14px;
+    }
+
+    .productinfo h3{
+        font-size: 14px;
+    }
+
+    .extra{
+        font-size: 12px;
+    }
+
+    .price{
+        font-size: 20px;
+    }
+
 }  
