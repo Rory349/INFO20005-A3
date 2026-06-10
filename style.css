@@ -119,7 +119,7 @@ img{
 /* hero section */
 .homemain{
     background-image: url('millbhome.png');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
     background-size: cover; 
     margin-top: 25px;
 }
